@@ -10,7 +10,7 @@ by adding `alice_roller` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:alice_roller, "~> 0.1.0"}
+    {:alice_roller, "~> 0.2.0"}
   ]
 end
 ```
