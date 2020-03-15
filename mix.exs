@@ -22,7 +22,7 @@ defmodule AliceRoller.MixProject do
   defp deps do
     [
       {:alice, "~> 0.3.7"},
-      {:high_roller, "~> 0.3.1"}
+      {:high_roller, "~> 0.3.2"}
     ]
   end
 end

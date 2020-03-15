@@ -14,6 +14,16 @@ defmodule Alice.Handlers.RollerTest do
       |> Conn.add_captures(~r/roll (?<term>.+)/i)
       |> Alice.Handlers.Roller.generate_roll_response
 
-    assert result == 4
+    assert result == "4"
+  end
+
+  test "it fails gracefully" do
+    result =
+      "roll invalid"
+      |> conn_with_text
+      |> Conn.add_captures(~r/roll (?<term>.+)/i)
+      |> Alice.Handlers.Roller.generate_roll_response
+
+    assert result == "Curiouser and curiouser! I cannot make heads nor tails of that!"
   end
 end
