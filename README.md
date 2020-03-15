@@ -1,11 +1,11 @@
-# AliceRoller
+# Alice Roller [![Build Status](https://travis-ci.org/NateBarnes/alice_roller.svg?branch=master)](https://travis-ci.org/NateBarnes/alice_roller) [![Hex Version](https://img.shields.io/hexpm/v/alice_roller.svg)](https://hex.pm/packages/alice_roller)
 
-**TODO: Add description**
+An addon for [Alice](https://github.com/alice-bot/alice) that allows
+users to roll dice in chat
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `alice_roller` to your list of dependencies in `mix.exs`:
+The package can be installed by adding `alice_roller` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
@@ -15,7 +15,5 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/alice_roller](https://hexdocs.pm/alice_roller).
+Documentation can be found at [https://hexdocs.pm/alice_roller](https://hexdocs.pm/alice_roller).
 
