@@ -7,7 +7,9 @@ defmodule AliceRoller.MixProject do
       version: "0.2.0",
       elixir: "~> 1.9",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      package: package(),
+      description: "An addon for Alice that allows users to roll dice in chat"
     ]
   end
 
@@ -23,6 +25,16 @@ defmodule AliceRoller.MixProject do
     [
       {:alice, "~> 0.3.7"},
       {:high_roller, "~> 0.3.2"}
+    ]
+  end
+
+  defp package do
+    [
+      licenses: ["MIT"],
+      links: %{
+        "GitHub" => "https://github.com/NateBarnes/alice_roller",
+        "Docs" => "https://hexdocs.pm/alice_roller/0.2.0"
+      }
     ]
   end
 end
