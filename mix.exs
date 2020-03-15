@@ -23,6 +23,7 @@ defmodule AliceRoller.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:alice, "~> 0.3.7"},
       {:high_roller, "~> 0.3.2"}
     ]
