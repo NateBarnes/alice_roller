@@ -25,7 +25,7 @@ defmodule Alice.Handlers.Roller do
       results
       |> Enum.map(fn
         x when is_bitstring(x) -> x
-        x -> Kernel.inspect(x)
+        x -> Kernel.inspect(x, charlists: :as_lists)
       end)
       |> Enum.join(" ")
 
