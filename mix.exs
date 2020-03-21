@@ -4,7 +4,7 @@ defmodule AliceRoller.MixProject do
   def project do
     [
       app: :alice_roller,
-      version: "0.2.2",
+      version: "0.3.0",
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -25,7 +25,7 @@ defmodule AliceRoller.MixProject do
     [
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:alice, "~> 0.3.7"},
-      {:high_roller, "~> 0.3.2"}
+      {:high_roller, "~> 0.4.1"}
     ]
   end
 
@@ -34,7 +34,7 @@ defmodule AliceRoller.MixProject do
       licenses: ["MIT"],
       links: %{
         "GitHub" => "https://github.com/NateBarnes/alice_roller",
-        "Docs" => "https://hexdocs.pm/alice_roller/0.2.0"
+        "Docs" => "https://hexdocs.pm/alice_roller/0.3.0"
       }
     ]
   end
