@@ -25,7 +25,7 @@ defmodule AliceRoller.MixProject do
     [
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:alice, "~> 0.3.7"},
-      {:high_roller, "~> 0.3.2"}
+      {:high_roller, "~> 0.4.0"}
     ]
   end
 
