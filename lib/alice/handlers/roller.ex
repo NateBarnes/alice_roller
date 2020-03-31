@@ -1,11 +1,11 @@
 defmodule Alice.Handlers.Roller do
   use Alice.Router
 
-  command ~r/roll (?<term>.+)/i, :fetch
-  route   ~r/^(alice )?roll (?<term>.+)/i, :fetch
+  command ~r/roll (?<term>.+)/i, :roll
+  route   ~r/^(alice )?roll (?<term>.+)/i, :roll
 
-  @doc "`roll 3d6+1` - rolls 3 d6s and adds 1"
-  def fetch(conn) do
+  @doc "`roll 3d6kh2+1` - rolls 3d6s, keeps the highest 2 and adds 1"
+  def roll(conn) do
     conn
     |> generate_roll_response
     |> reply(conn)
