@@ -4,7 +4,7 @@ defmodule AliceRoller.MixProject do
   def project do
     [
       app: :alice_roller,
-      version: "0.3.0",
+      version: "0.3.1",
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
       deps: deps(),

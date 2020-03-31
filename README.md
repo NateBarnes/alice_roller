@@ -10,7 +10,7 @@ The package can be installed by adding `alice_roller` to your list of dependenci
 ```elixir
 def deps do
   [
-    {:alice_roller, "~> 0.2.2"}
+    {:alice_roller, "~> 0.3.1"}
   ]
 end
 ```
