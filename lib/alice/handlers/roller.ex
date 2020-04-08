@@ -11,7 +11,7 @@ defmodule Alice.Handlers.Roller do
     |> reply(conn)
   end
 
-  def generate_roll_response(conn) do
+  defp generate_roll_response(conn) do
     conn
     |> Alice.Conn.last_capture
     |> HighRoller.Parser.parse_with_results
