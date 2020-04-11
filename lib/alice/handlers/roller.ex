@@ -11,7 +11,7 @@ defmodule Alice.Handlers.Roller do
     |> reply(conn)
   end
 
-  def generate_roll_response(conn) do
+  defp generate_roll_response(conn) do
     conn
     |> Alice.Conn.last_capture
     |> HighRoller.Parser.parse_with_results
@@ -19,7 +19,6 @@ defmodule Alice.Handlers.Roller do
   end
 
   defp convert_roll_parse_to_message(:error), do: "Curiouser and curiouser! I cannot make heads nor tails of that!"
-  defp convert_roll_parse_to_message(parse) when is_integer(parse), do: Integer.to_string(parse)
   defp convert_roll_parse_to_message(%{total: total, full_results: results}) do
     results_string =
       results
@@ -31,5 +30,4 @@ defmodule Alice.Handlers.Roller do
 
     "#{total}\n#{results_string}"
   end
-  defp convert_roll_parse_to_message(parse), do: parse
 end

@@ -1,4 +1,4 @@
-# Alice Roller [![Build Status](https://travis-ci.org/NateBarnes/alice_roller.svg?branch=master)](https://travis-ci.org/NateBarnes/alice_roller) [![Hex Version](https://img.shields.io/hexpm/v/alice_roller.svg)](https://hex.pm/packages/alice_roller)
+# Alice Roller [![Build Status](https://travis-ci.org/NateBarnes/alice_roller.svg?branch=master)](https://travis-ci.org/NateBarnes/alice_roller) [![Hex Version](https://img.shields.io/hexpm/v/alice_roller.svg)](https://hex.pm/packages/alice_roller) [![Coverage Status](https://coveralls.io/repos/github/NateBarnes/alice_roller/badge.svg)](https://coveralls.io/github/NateBarnes/alice_roller)
 
 An addon for [Alice](https://github.com/alice-bot/alice) that allows
 users to roll dice in chat
