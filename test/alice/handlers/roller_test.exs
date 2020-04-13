@@ -1,5 +1,5 @@
 defmodule Alice.Handlers.RollerTest do
-  use Alice.HandlersCase, handlers: Alice.Handlers.Roller
+  use Alice.HandlerCase, handlers: Alice.Handlers.Roller
 
   test "it rolls a single dice appropriately" do
     send_message("roll 3d1+1")
