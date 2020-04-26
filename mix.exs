@@ -26,7 +26,7 @@ defmodule AliceRoller.MixProject do
   defp deps do
     [
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
-      {:alice, "~> 0.4.3", override: true},
+      {:alice, "~> 0.4.3", github: "alice-bot/alice", override: true},
       {:high_roller, "~> 0.4.1"},
       {:excoveralls, "~> 0.12.3", only: :test}
     ]
