@@ -13,6 +13,12 @@ defmodule Alice.Handlers.RollerTest do
     assert first_reply() == "7\n[1, 1, 1] + 1 + [1, 1, 1]"
   end
 
+  test "it understands to translate a into 1" do
+    send_message("roll a d1")
+
+    assert first_reply() == "1\n[1]"
+  end
+
   test "it fails gracefully" do
     send_message("roll invalid")
 
