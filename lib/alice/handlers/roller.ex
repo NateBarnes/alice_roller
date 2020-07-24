@@ -14,8 +14,13 @@ defmodule Alice.Handlers.Roller do
   defp generate_roll_response(conn) do
     conn
     |> Alice.Conn.last_capture
+    |> convert_a_to_one
     |> HighRoller.Parser.parse_with_results
     |> convert_roll_parse_to_message
+  end
+
+  defp convert_a_to_one(message) do
+    Regex.replace(~r/a /i, message, "1")
   end
 
   defp convert_roll_parse_to_message(:error), do: "Curiouser and curiouser! I cannot make heads nor tails of that!"
